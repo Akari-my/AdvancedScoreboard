@@ -22,6 +22,7 @@ class AsCommand extends Command{
         if ($sender instanceof Player) {
             $sender->sendMessage(TextFormat::RED . "Use this Command in-game.");
         }
-        scoreboard::AsForm($sender);
+        $form = new scoreboard($this->plugin);
+        $form->AsForm($sender);
     }
 }
