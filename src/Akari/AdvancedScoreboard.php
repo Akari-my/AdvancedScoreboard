@@ -4,6 +4,7 @@ namespace Akari;
 
 use Akari\event\LevelChangeEvent;
 use Akari\task\AdvancedTask;
+use Akari\commands\AsCommand;
 use pocketmine\event\Listener;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat as TF;
@@ -21,6 +22,7 @@ class AdvancedScoreboard extends PluginBase implements Listener{
 
         $this->getScheduler()->scheduleRepeatingTask(new AdvancedTask($this), $this->getConfig()->get("interval-time", 20));
         $this->getServer()->getPluginManager()->registerEvents(new LevelChangeEvent($this), $this);
+        $this->getServer()->getCommandMap()->register("as", new AsCommand($this));
 
         $this->getLogger()->info(TF::AQUA . "==========( ADVANCEDSCOREBOARD )=========");
         $this->getLogger()->info(TF::GRAY . "» Version: " . $this->getDescription()->getVersion());
