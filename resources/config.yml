@@ -1,0 +1,68 @@
+---
+interval-time: 20
+# Amount in ticks after which AdvancedScoreboards would update
+
+# Supported Tags
+# {NAME} -> Name of the player
+# {ONLINE} -> The number of online players
+# {MAX_ONLINE} -> The server slots number
+# {IP} -> Current player's IP
+# {ITEM_ID} -> Current item in hand
+# {X} {Y} {Z} -> X/Y/Z coordinate of the player
+# {CPS} -> Get the CPS of the player (Requires PreciseCPSCounter by Luca28pet)
+# {RANK} -> Current ingame group (Requires PurePerms by poggit-orphanage)
+# {WORLDNAME} -> Name of the world
+# {WORLDPLAYERS} -> Players in the world
+# {MONEY} -> Money of the player (Requires EconomyAPI by poggit-orphanage)
+# {PREFIX} -> Show prefix of a player (Requires PureChat by poggit-orphanage)
+# {SUFFIX} -> Show suffix of a player(Requires PureChat by poggit-orphanage)
+# {FACTION} -> Show player's factions (Requires FactionsPro by poggit-orphanage)
+# {FPOWER} -> Show player's faction power (Requires FactionsPro by poggit-orphanage)
+# {TICKS} -> Show server's ticks
+# {TPS} -> Show server's tps
+# {TIME} -> Shows time
+# {RANDOMCOLOR} -> Randomize the color text
+# {PING} -> Show player's ping
+# {COMBATLOGGER} -> Show Combat Logger duration (Requires CombatLogger by jacknoordhuis)
+# {KDR} -> Shows player's KDR (Requires KDR by JackMD)
+# {DEATHS} -> Shows player's deaths (Requires KDR by JackMD)
+# {KILLS} -> Shows player's kills (Requires KDR by JackMD)
+# {ISLAND_NAME} -> See the island name (Requires RedSkyBlock by RedCraftGH)
+# {ISLAND_MEMBERS} -> See the island members (Requires RedSkyBlock by RedCraftGH)
+# {ISLAND_BANNED} -> See the banned island (Requires RedSkyBlock by RedCraftGH)
+# {ISLAND_LOCKED_STATUS} -> See the island locked status (Requires RedSkyBlock by RedCraftGH)
+# {ISLAND_SIZE} -> See the island size (Requires RedSkyBlock by RedCraftGH)
+# {ISLAND_RANK} -> See the island rank (Requires RedSkyBlock by RedCraftGH)
+# {ISLAND_VALUE} -> See the island value (Requires RedSkyBlock by RedCraftGH)
+
+# NEW TAGS SOON
+
+
+default: # DEFAULT | IF NO WORLDS ARE CONFIGURED WILL DISPLAY THIS FOR EVERY WORLD
+  title:
+    - '&cServer Name'
+    - '&aServer Name'
+  lines:
+    - '§»'
+    - '&7»Player: &3{NAME}'
+    - '&7»Online: &3{ONLINE}'
+    - '&7»World: &3{WORLDNAME}'
+    - '&7»X: &a{X}'
+    - '&7»Y: &a{Y}'
+    - '&7»Z: &a{Z}'
+
+worlds:
+  world:
+    title:
+      - '&cServer Name'
+      - '&aServer Name'
+    lines:
+      - '§»'
+      - '&7»Player: &3{NAME}'
+      - '&7»Online: &3{ONLINE}'
+      - '&7»World: &3{WORLDNAME}'
+      - '&7»X: &a{X}'
+      - '&7»Y: &a{Y}'
+      - '&7»Z: &a{Z}'
+
+...
