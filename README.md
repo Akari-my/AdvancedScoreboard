@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/SamuelPozzobon/AdvancedScoreboard">
+  <a href="https://github.com/Akari-my/AdvancedScoreboard">
     <img src="backgrounder.png" alt="Logo">
   </a>
 
