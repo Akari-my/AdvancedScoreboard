@@ -16,6 +16,8 @@
     <a href="https://github.com/Akari-my/AdvancedScoreboard/issues">Request Tags</a>
     ·
     <a href="https://github.com/Akari-my/AdvancedScoreboard/issues">Request Features</a>
+    ·
+    <a href="https://github.com/SamuelPozzobon/AdvancedScoreboard">Ths is a Fork from Varion</a>
   </p>
 </div>
 
